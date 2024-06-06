@@ -1,0 +1,9 @@
+kind: Kustomization
+namespace: logging
+helmCharts:
+  - name: fluent-bit
+    releaseName: fluent-bit
+    repo: https://fluent.github.io/helm-charts
+    version: 0.46.5
+    namespace: logging
+    valuesFile: values.yaml
